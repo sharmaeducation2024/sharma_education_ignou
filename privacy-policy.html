@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Sharma Education Ignou</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #3c4043;
+            --heading-color: #202124;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #dadce0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        h3 {
+            color: var(--heading-color);
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background-color: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            color: #d93025;
+        }
+
+        .note-box {
+            background-color: #e8f0fe;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 0 4px 4px 0;
+            margin: 20px 0;
+        }
+
+        .note-box p {
+            margin: 0;
+            color: #1967d2;
+        }
+
+        .meta-date {
+            color: #5f6368;
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px auto;
+                padding: 0 10px;
+            }
+            .card {
+                padding: 20px;
+                border-radius: 4px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>Privacy Policy</h1>
+        <div class="meta-date">Effective Date: May 17, 2026</div>
+
+        <p><strong>Sharma Education Ignou</strong> ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle data, system permissions, and information when you use our mobile application.</p>
+
+        <h2>1. Information Collection and Usage</h2>
+        <p>In this version of the application, <strong>we do not directly collect, track, or harvest any specific personal data</strong> from our users. To provide core features like user authentication, cloud syncing, and educational file downloading, the app interacts securely with specific services and device capabilities:</p>
+        
+        <h3>A. Authentication Data</h3>
+        <p><strong>Google Sign-In & Firebase Auth:</strong> To access the app's features, you are required to log in securely using Google Sign-In via Firebase Authentication. This service verifies your identity safely. We do not store your personal credentials or passwords on our own external servers.</p>
+
+        <h3>B. Cloud Services & Data Storage</h3>
+        <ul>
+            <li><strong>Firebase Firestore & Firebase Storage:</strong> The app utilizes Firebase Firestore to manage application metadata and Firebase Storage to securely host educational resources (such as PDF files).</li>
+            <li><strong>Local Storage & Room Database:</strong> Downloaded PDF files are stored directly in your device’s secure internal storage. We use a local Room Database solely to track, organize, and manage your downloaded PDFs locally on your device.</li>
+        </ul>
+
+        <h2>2. Device Permissions Required</h2>
+        <p>To ensure reliable data synchronization and file downloading capabilities, the app requests the following system permissions:</p>
+        <ul>
+            <li><strong>Internet Access (<code>INTERNET</code>):</strong> Required to connect to Firebase cloud services, fetch data from Firestore, and download educational PDF files.</li>
+            <li><strong>Network State (<code>ACCESS_NETWORK_STATE</code>):</strong> Used strictly to monitor device connectivity (checking whether the device is online or offline). This ensures the app only attempts downloads or data syncs when an active internet connection is available, preserving your battery and mobile data.</li>
+            <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Required (on Android 13 and above) to display notifications that keep you informed about active PDF downloads and background data synchronization status.</li>
+            <li><strong>Foreground Service (<code>FOREGROUND_SERVICE</code> & <code>FOREGROUND_SERVICE_DATA_SYNC</code>):</strong> Used to run critical data synchronization and file downloading tasks in the background. This ensures that your educational PDF downloads complete successfully even if you navigate away from the app.</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <p>The app utilizes trusted third-party Software Development Kits (SDKs) provided by Google to handle authentication, cloud storage, and databases. These services may collect information used to identify you in accordance with their own privacy policies:</p>
+        <ul>
+            <li>Google Play Services</li>
+            <li>Firebase Authentication</li>
+            <li>Firebase Firestore & Cloud Storage</li>
+        </ul>
+        
+        <div class="note-box">
+            <p><strong>Note:</strong> We highly recommend reviewing Google’s Privacy Policy to understand how they handle data processed through Firebase: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy & Terms</a>.</p>
+        </div>
+
+        <h2>4. Data Security</h2>
+        <p>We prioritize the security of your data. By leveraging Firebase’s secure cloud infrastructure and keeping your download history strictly local within a Room Database on your device's internal storage, we minimize the risk of unauthorized data exposure. However, please remember that no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+
+        <h2>5. Children’s Privacy</h2>
+        <p>Our application provides educational resources. We do not knowingly collect personally identifiable information from children. If a parent or guardian becomes aware that their child has provided us with information without their consent, they should contact us immediately so we can take necessary actions.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Effective Date." You are advised to review this Privacy Policy periodically for any updates.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions, suggestions, or concerns about this Privacy Policy, please feel free to reach out to us:</p>
+        <ul>
+            <li><strong>By Email:</strong> <a href="mailto:sharmaeducation2024@gmail.com">sharmaeducation2024@gmail.com</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
