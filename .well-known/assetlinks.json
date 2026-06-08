@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sharmaeducation.ignou",
+      "sha256_cert_fingerprints": [
+        "83:D9:AD:EB:D3:B4:90:69:2D:4C:D1:B9:65:64:05:D8:CB:98:E5:A4:87:C4:31:07:5E:31:F6:F9:F4:90:C0:C0" ,
+        "DD:91:A0:B6:6B:EC:38:88:28:CB:FE:93:6E:68:11:D5:58:4A:CE:AA:82:EB:E8:B3:1F:FE:FB:C2:5A:3D:5D:A5"
+      ]
+    }
+  }
+]
