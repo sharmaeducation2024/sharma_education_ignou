@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opening App...</title>
+</head>
+<body>
+    <p>Opening app...</p>
+
+    <script>
+        const path = window.location.pathname;
+
+        window.location.href =
+          `intent://${path.substring(1)}#Intent;scheme=https;package=com.sharmaeducation.ignou;end`;
+
+        setTimeout(() => {
+            window.location.href =
+              "https://play.google.com/store/apps/details?id=com.sharmaeducation.ignou";
+        }, 1500);
+    </script>
+</body>
+</html>
